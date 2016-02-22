@@ -1,0 +1,62 @@
+//
+//      ooImageCropper: Styles
+//
+
+.oo-image-cropper {
+  width: 320px;
+  height: 320px;
+
+  // img {
+  //   width: 50%;
+  //   height: 300px;
+  // }
+
+  .preview {
+    width: 100px;
+    height: 100px;
+    overflow:hidden;
+  }
+
+  .output {
+    width: 100px;
+    height: 100px;
+  }
+
+  .resized {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+[ooThumbImage] {
+  user-select: none;
+}
+
+[ooThumbImage~="tiny"] {
+  img, i {
+    height: 30px;
+    width: 30px;
+  }
+
+  i {
+    font-size: 20px;
+    text-align: center;
+  }
+
+}
+
+[ooThumbImage~="tiny"][ooThumbImage~="circle"] {
+  i {
+    font-size: 20px;
+  }
+
+}
+
+[ooThumbImage~="circle"] {
+  border-radius: 50%;
+}
+
+[ooThumbImage~="rounded"] {
+  border-radius: 5px;
+}
+

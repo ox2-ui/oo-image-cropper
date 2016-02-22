@@ -1,0 +1,39 @@
+template(name="ooImageCropper")
+  oo-box(ooThumbImage="{{oo}}" style="flex: 0 0 auto; {{style}}" class="js-{{jsClass}} color:{{backColor}}")
+    if image
+      img( src="{{image}}")
+    else
+      i(class="ico-{{icon}}" class="text-color:{{iconColor}}")
+    input.js-file(type="file")
+
+template(name="ooImageCropperModal")
+  .ooImageCropperModal(oo-Color="back:white")#ooImageCropperModalId
+    img.ooImage(src="{{dataURL}}")
+    button.js-cancel(btn="warning") Cancel
+    button.js-upload(btn="positive push-all") Upload
+    if uploading
+      | uploading...
+    //- img.ooImage(src="{{var 'imageData'}}")
+    //- div
+    //-   button.js-rotateCounterClockWise(btn="positive push-all") Rotate
+    //-   button.js-rotateClockWise(btn="positive push-all") Rotate Clockwise
+    //-   button.js-getCroppedCanvas(btn="positive push-all") Output
+    //-   button.js-upload(btn="positive push-all") Upload
+    //-     i.ico-dna
+    //-   button.js-filter(btn="positive push-all") Filter
+    //-   div
+    //-     input.js-file(type="file" )
+    //-   div
+    //-     input(type="file" multiple )
+    //-   .previewImage
+    //-   div
+    //-     if uploading
+    //-       | uploading...
+    //-     div output
+    //-       img.output( src="{{var 'output'}}")
+    //-     div output resized
+    //-       img#resized.resized( src="{{var 'outputResized'}}")
+    //-     div upload
+    //-       img.output( src="{{var 'link'}}")
+    //-       div {{var 'link'}}
+    //-     div deletehash {{var 'deleteHash'}}

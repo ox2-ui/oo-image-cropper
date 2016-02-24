@@ -1,16 +1,17 @@
 template(name="ooImageCropper")
+  input.js-file(type="file" accept="image/*" capture)
   oo-box(ooThumbImage="{{oo}}" style="flex: 0 0 auto; {{style}}" class="js-{{jsClass}} color:{{backColor}}")
     if image
       img( src="{{image}}")
     else
       i(class="ico-{{icon}}" class="text-color:{{iconColor}}")
-    input.js-file(type="file")
+    img( src="{{imageData}}")
 
 template(name="ooImageCropperModal")
   .ooImageCropperModal(oo-Color="back:white")#ooImageCropperModalId
-    img.ooImage(src="{{dataURL}}")
     button.js-cancel(btn="warning") Cancel
     button.js-upload(btn="positive push-all") Upload
+    img.ooImage(src="{{dataURL}}")
     if uploading
       | uploading...
     //- img.ooImage(src="{{var 'imageData'}}")

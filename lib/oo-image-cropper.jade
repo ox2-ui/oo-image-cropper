@@ -9,8 +9,10 @@ template(name="ooImageCropper")
 
 template(name="ooImageCropperModal")
   .ooImageCropperModal(oo-Color="back:backdrop-alt")#ooImageCropperModalId
-    oo-box(flex="content:between items:center")
+    oo-box(flex="content:between items:center" style="padding-top: 20px;")
       button.js-cancel(btn="negative push-all small raised") Cancel
+      button.js-rotateCounterClockWise(btn="neutral push-all small raised") -90
+      button.js-rotateClockWise(btn="neutral push-all small raised") 90
       button.js-upload(btn="positive push-all small raised") Upload
     .ooImageCropContainer
       img.ooImage

@@ -4,10 +4,10 @@ Package.describe({
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/ox2/oo-image-cropper',
+  git: '',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md'
+  documentation: ''
 });
 
 var C = 'client';
@@ -28,7 +28,7 @@ Package.onUse(function(api) {
       'mquandalle:jade@0.4.9',
       'ox2:modals@2.2.0',
       'simple:imgur@1.0.3',
-      'jonblum:jquery-cropper@2.0.1',
+      'jonblum:jquery-cropper@2.3.0',
       'jquery',
 
     ]);

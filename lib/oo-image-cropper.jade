@@ -8,10 +8,12 @@ template(name="ooImageCropper")
     img( src="{{imageData}}")
 
 template(name="ooImageCropperModal")
-  .ooImageCropperModal(oo-Color="back:white")#ooImageCropperModalId
-    button.js-cancel(btn="warning") Cancel
-    button.js-upload(btn="positive push-all") Upload
-    img.ooImage(src="{{dataURL}}")
+  .ooImageCropperModal(oo-Color="back:backdrop-alt")#ooImageCropperModalId
+    oo-box(flex="content:between items:center")
+      button.js-cancel(btn="negative push-all small raised") Cancel
+      button.js-upload(btn="positive push-all small raised") Upload
+    .ooImageCropContainer
+      img.ooImage(src="{{dataURL}}")
     if uploading
       | uploading...
     //- img.ooImage(src="{{var 'imageData'}}")

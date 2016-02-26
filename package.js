@@ -29,7 +29,7 @@ Package.onUse(function(api) {
       'ox2:modals@2.2.0',
       'simple:imgur@1.0.3',
       'jonblum:jquery-cropper@2.0.1',
-      'jquery@1.11.5-beta.11',
+      'jquery',
 
     ]);
     api.addFiles('lib/oo-image-cropper.jade', C);

@@ -25,8 +25,8 @@ http@1.1.1
 id-map@1.0.4
 jonblum:jquery-cropper@2.0.2
 jquery@1.11.4
-lauricio:less-autoprefixer@2.5.0_3
-local-test:ox2:image-cropper@0.0.1
+less@2.5.1
+local-test:ox2:image-cropper@1.0.0
 logging@1.0.8
 meteor@1.1.10
 minifiers@1.1.7
@@ -38,8 +38,8 @@ mquandalle:jade-compiler@0.4.5
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
 ordered-dict@1.0.4
-ox2:image-cropper@0.0.1
-ox2:modals@2.1.0
+ox2:image-cropper@1.0.0
+ox2:modals@2.2.0
 promise@0.5.1
 random@1.0.5
 reactive-var@1.0.6

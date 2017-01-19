@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ox2:image-cropper',
-  version: '1.0.0',
+  version: '1.1.0',
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
@@ -26,7 +26,7 @@ Package.onUse(function(api) {
     api.use([
       'less',
       'mquandalle:jade@0.4.9',
-      'ox2:modals@2.2.0',
+      'ox2:modals@3.0.0',
       'simple:imgur@1.0.3',
       'jonblum:jquery-cropper@2.3.0',
       'jquery',
